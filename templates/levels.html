@@ -1,0 +1,9 @@
+{% extends "test.html" %}
+{% block text %}
+{% endblock %}
+{% block body %}
+    {% for levels in levels %}
+                    <a href=""><button>{{ levels.name }}</button></a>
+    {% endfor %}
+
+{% endblock %}

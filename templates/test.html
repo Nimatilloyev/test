@@ -1,0 +1,25 @@
+{% extends "main.html" %}
+{% block text %}
+{% endblock %}
+{% block body %}
+
+    <div class="test">
+        {% for subjects in subjects %}
+
+            <a href="{{ url_for('levels') }}"><button>{{ subjects.subjects_name }}</button></a>
+
+        {% endfor %}
+        {#    <a href="{{ url_for('english') }}"><button>English</button></a>#}
+        {#    <a href=""><button>IT (international technology)</button></a>#}
+        {#    <a href=""><button>Biology</button></a>#}
+        {#    <a href=""><button>Mathematics</button></a>#}
+        {#    <a href=""><button>Chemistry</button></a>#}
+
+        {#    <a href="{{ url_for('beginner') }}" name="Beginner"><button>Beginner</button></a>#}
+        {#    <a href="" name="Elementary"><button>Elementary</button></a>#}
+        {#    <a href="" name="Pre_intermediate"><button>Pre-intermediate</button></a>#}
+        {#    <a href="" name="Intermediate"><button>Intermediate</button></a>#}
+        {#    <a href="" name="IELTS"><button>IELTS</button></a>#}
+    </div>
+
+{% endblock %}

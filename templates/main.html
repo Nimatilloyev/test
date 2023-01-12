@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="../static/sass/main.min.css">
+</head>
+<body>
+<header>
+
+    <div class="header">
+
+        <div class="header_main">
+            <a href="{{ url_for("test") }}">Test</a>
+        </div>
+        <div class="header_main">
+            <a href="{{ url_for("create_subjects") }}">Create subjects</a>
+        </div>
+        <div class="header_main">
+            <a href="{{ url_for("add_levels") }}">Add levels</a>
+        </div>
+    </div>
+
+</header>
+
+{% block body %}
+
+
+{% endblock %}
+<script src="../static/js/test.js"></script>
+</body>
+</html>

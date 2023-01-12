@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+{% block text %}
+{% endblock %}
+{% block body %}
+<section>
+ <div class="create_subjects">
+            <div class="create_subjects_main">
+                <h1>Create subjects</h1>
+                <form action="{{ url_for('create_subjects') }}" method="post">
+
+                    <div class="create_subjects_main_mini">
+                        <input placeholder="subject nomi" name="subjects_name" type="text">
+                    </div>
+
+                    <div class="create_subjects_main_button">
+                        <button>Create subjects</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</section>
+{% endblock %}

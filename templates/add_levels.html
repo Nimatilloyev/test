@@ -1,0 +1,31 @@
+{% extends "main.html" %}
+{% block text %}
+{% endblock %}
+{% block body %}
+    <section>
+        <div class="add_levels">
+            <div class="add_levels_main">
+                <h1>Add levels</h1>
+                <form action="{{ url_for('add_levels') }}" method="post">
+
+
+                    <div class="add_levels_main_mini">
+                        <select class="subjects_id" name="subjects_id" id="">
+                            {% for subjects in subjects %}
+                                <option value="{{ subjects.id }}">{{ subjects.subjects_name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="add_levels_main_mini">
+                        <input placeholder="add levels" name="name" type="text">
+                    </div>
+
+                    <div class="add_levels_main_button">
+                        <button>Add levels</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}
